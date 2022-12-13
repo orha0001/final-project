@@ -1,0 +1,749 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* GENERIC/GENERALS/DEFAULT STYLES */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px; /* 1em = 14px = 1rem */
+    line-height: 1.5;
+    color: black;
+}
+
+h1 {
+    font-size: 71px;
+    line-height: 106px;
+    margin-bottom: 17px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 48px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+p{
+    margin-bottom: 12px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    padding: 1em;
+}
+
+
+
+/* ----> NAVIGATION SECTION <---- */
+
+nav {
+    background-color: #222222;
+}
+
+
+nav a:link,
+nav a:visited {
+    display: block;
+    color: #c78b07;
+    font-size: 18px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav li.current a:link,
+nav li.current a:visited {
+    background-color: #c78b07;
+    color: black;
+}
+
+.logo {
+    background-color: #c78b07;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav form .searchbar {
+    width: 590px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+nav form button {
+    background-color: #222222;
+    color: #c78b07;
+    border-radius: 1px;
+    border-color: #c78b07;
+    height: 42px;
+    width: 42px;
+    color: #c78b07; 
+    margin-left: -4px;
+}
+
+
+
+/* ----> WELCOME SECTION <---- */
+
+.header-welcome {
+    background-image: url(../images/main-banner.jpg);
+    background-size: cover;
+    padding-top: 68px;
+    padding-bottom: 68px;
+}
+
+.header-welcome .container {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding-top: 50px;
+    
+}
+
+.header-welcome button {
+     background-color: #c78b07;
+     color: black;
+     border: solid 1px;
+     border-color: #c78b07;
+     font-size: 1.5em;
+     margin-bottom: 14px;
+     margin-left: 14px;
+     padding: 34px;
+}
+
+
+
+/* ----> ABOUT SECTION <---- */
+
+.section-about {
+    background-color: #ffe6ac;
+}
+
+
+
+/* ----> SERVICES SECTION <---- */
+
+.section-services .digital, .marketing, .video, .web, .print {
+    background-color:#ffe6ac;
+    margin-top: 14px;
+}
+
+.section-services button  {
+    background-color: #222222;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    margin-bottom: 14px;
+    margin-left: 14px;
+    padding: 34px;
+}
+
+.section-services p{
+    margin-left: 14px;
+}
+
+.section-services img {
+    width: 678px;
+}
+
+.section-services h3 {
+    padding-bottom: 10px;
+    margin-left: 17px;
+}
+
+
+
+/* ----> VISION SECTION <---- */ 
+
+.section-vision {
+    background-image: url(../images/vision.jpg);
+    background-size: cover;
+    background-position-y: -90px;
+    color: white;
+}
+
+.section-vision p {
+    margin-left: 14px;
+}
+
+.section-vision button  {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: solid 1px;
+    border-color: #c78b07;
+    font-size: 1.5em;
+    margin-bottom: 14px;
+    margin-left: 14px;
+    padding: 34px;
+}
+
+
+
+/* ----> TEAM SECTION <---- */ 
+
+.section-team .john, .bob {
+    background-color:#ffe6ac;
+    padding-right: 12px;
+    padding-left: 12px;
+    font-size: 14px;
+}
+
+.section-team p{
+    padding-bottom: 27px;
+    margin-top: 17px;
+}
+
+.section-team h4 {
+    border-bottom: solid;
+    border-color: #c78b07;
+}
+
+.section-team img {
+    width: 678px;
+    height: auto;
+    margin-top: 14px;
+    margin-bottom: -5px;
+}
+
+
+
+/* ----> CONTACT SECTION <---- */ 
+
+.section-contact h2 {
+    margin-top: 10px;
+}
+
+input[type=text] {
+	width: 100%;
+	padding: 5px 20px;
+	margin: 2px 0 2px 0;
+	box-sizing: border-box;
+	border: 1px solid gray;
+  }
+
+input[id=message] {
+	width: 100%;
+	padding: 50px 20px;
+	margin: 10px 0 20px 0;
+	box-sizing: border-box;
+	border: 1px solid gray;
+  }
+
+
+input[type=submit] {
+	display: block;
+	background-color: #222222;
+    color: #c78b07;
+	padding: 3px 3px;
+	font-size: 1.5em;
+	cursor: pointer;
+	border: 1px solid black;
+  }
+
+
+
+  /* ----> HOURS <---- */
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  th {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffe6ac;
+    color: black;
+  }
+
+  td {
+    text-align: left;
+    padding: 10px;
+  }
+
+
+
+  /* ----> FOOTER <---- */
+
+  footer {
+    background-color: #222222;
+    color: #c78b07;
+    padding-top: 20px;
+  }
+
+
+  
+/* TABLET STYLES: 760px to 1199px */
+@media screen and (min-width: 760px) {
+
+    .container {
+        width: 706px;
+        margin: 0 auto;
+    }
+    /* NOTHING ELSE! */ 
+}
+
+    /* ================================
+            DESKTOP STYLES
+   ================================  */
+
+   @media screen and (min-width: 1200px) {
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px; /* 1em = 14px = 1rem */
+        line-height: 1.5;
+        color: black;
+    }
+    
+    h1 {
+        font-size: 85px;
+        line-height: 106px;
+        margin-bottom: 17px;
+        font-weight: bold;
+    }
+    
+    h2 {
+        font-size: 48px;
+        margin-bottom: 12px;
+        font-weight: bold;
+    }
+    
+    h3 {
+        font-size: 32px;
+        font-weight: bold;
+        padding-top: 20px;
+    }
+    
+    h4 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    p{
+        margin-bottom: 17px;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .container {
+        width: 1168px;
+        margin: 0 auto;
+        padding: 1em;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+
+
+    /* -----> NAVBAR <----- */ 
+
+    nav {
+        background-color: #222222;
+        height: 170px;
+    }
+
+    nav .container {
+    display: flex;
+    align-items: center;
+    }   
+    
+    nav ul {
+        display:flex;
+    }
+
+    .logo {
+        background-color: #222222;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        position: absolute;
+    }
+    
+    nav a:link,
+    nav a:visited {
+        display: inline;
+        color: #c78b07;
+        font-size: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        text-decoration: none;
+        text-align: center; 
+    }
+    
+    nav li.current a:link,
+    nav li.current a:visited {
+        background-color: #c78b07;
+        color: black;
+        margin-left: 170px;
+        margin-bottom: 50px;
+    }
+    
+    
+    nav form .searchbar {
+        width: 215px;
+        padding: 10px;
+        font-size: 18px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    
+    nav form button {
+        display: inline-block;
+        background-color: #222222;
+        border-radius: 1px;
+        border-color: #c78b07;
+        height: 42px;
+        width: 41px;
+        color: #c78b07; 
+    }
+
+
+
+    /* ----> WELCOME SECTION <---- */
+
+    .header-welcome {
+        background-image: url(../images/main-banner.jpg);
+        background-size: cover;
+        background-position-y: -350px;
+        padding-top: 68px;
+        padding-bottom: 68px;
+    }
+
+    .header-welcome .container {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding-top: 75px;
+    }
+
+    .header-welcome button {
+        background-color: #c78b07;
+        color: black;
+        border: solid 1px;
+        border-color: #c78b07;
+        font-size: 1.5em;
+        margin-bottom: 14px;
+        margin-left: 14px;
+        padding: 34px;
+    }
+
+
+
+    /* ----> ABOUT SECTION <---- */
+
+    .section-about {
+        background-color: #ffe6ac;
+        height: 330px;
+    }
+
+    .section-about img {
+        float: left;
+        width: 575px;
+        height: 290px;
+        padding-right: 15px;
+    }
+
+    .section-about h2, p {
+        padding-top: 10px;
+    }
+
+
+
+    /* ----> SERVICES SECTION <---- */ 
+
+    .section-services .digital button, .marketing button  {
+        background-color: #222222;
+        color: white;
+        border: none;
+        font-size: 1.5em;
+        margin: 14px;
+        padding: 34px;
+        width: 550px;
+        cursor: pointer;
+    }
+
+    .section-services .video button, .web button, .print button  {
+        background-color: #222222;
+        color: white;
+        border: none;
+        font-size: 1.5em;
+        margin: 14px;
+        padding: 34px;
+        width: 350px;
+        cursor: pointer;
+    }
+
+    .section-services p{
+        margin-left: 14px;
+        padding-right: 10px;
+    }
+
+    .section-services img {
+        width: 678px;
+    }
+
+    .section-services .container h2 {
+        padding-top: 40px;
+    }
+
+    .section-services h3 {
+        padding-bottom: 10px;
+        margin-left: 17px;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: 575px;
+        gap: 15px;
+        grid-template-areas:
+          "a a a b b b"
+          "a a a b b b"
+          "c c d d e e"
+          "c c d d e e"
+      }
+
+    .services-grid :nth-child(1) {grid-area: a}
+    .services-grid :nth-child(2) {grid-area: b}
+    .services-grid :nth-child(3) {grid-area: c}
+    .services-grid :nth-child(4) {grid-area: d}
+    .services-grid :nth-child(5) {grid-area: e}
+
+
+    
+    /* ----> VISION SECTION <---- */
+
+    .section-vision {
+        background-image: url(../images/vision.jpg);
+        background-size: cover;
+        background-position-y: -500px;
+        color: white;    
+    }
+
+    .section-vision p {
+        margin-left: 0px;
+    }
+
+    .section-vision button  {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: solid 1px;
+        border-color: #c78b07;
+        font-size: 1.5em;
+        margin-bottom: 14px;
+        margin-left: 0;
+        padding: 34px;
+    }
+
+
+
+    /* ----> TEAM SECTION <---- */ 
+
+    .section-team .john, .bob {
+    background-color:#ffe6ac;
+    padding-right: 12px;
+    padding-left: 12px;
+    font-size: 14px;
+    }
+
+    .section-team p{
+    padding-bottom: 27px;
+    margin-top: 17px;
+    }
+
+    .section-team h4 {
+    border-bottom: solid;
+    border-color: #c78b07;
+    }
+
+    .section-team img {
+    width: 678px;
+    height: auto;
+    margin-top: 0;
+    }
+
+    .team-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "a b"
+        "d c"
+    }
+
+    .team-grid :nth-child(1) {grid-area: a}
+    .team-grid :nth-child(2) {grid-area: b}
+    .team-grid :nth-child(3) {grid-area: c}
+    .team-grid :nth-child(4) {grid-area: d}
+
+
+
+    /* ----> CONTACT SECTION <---- */ 
+
+    .section-contact h2 {
+        margin-top: 10px;
+    }
+
+    input[type=text] {
+        width: 100%;
+        padding: 5px 20px;
+        margin: 2px 0 2px 0;
+        box-sizing: border-box;
+        border: 1px solid gray;
+    }
+
+    input[id=message] {
+        width: 100%;
+        padding: 50px 20px;
+        margin: 10px 0 20px 0;
+        box-sizing: border-box;
+        border: 1px solid gray;
+    }
+
+
+    input[type=submit] {
+        display: block;
+        background-color: #222222;
+        color: #c78b07;
+        padding: 3px 3px;
+        font-size: 1.5em;
+        cursor: pointer;
+        border: 1px solid black;
+    }
+
+
+    /* ----> HOURS <---- */
+    
+    table, th, td {
+        border: 1px solid black;
+    }
+    
+    table {
+        width: 100%;
+    }
+    
+    th {
+        text-align: center;
+        padding: 10px;
+        background-color: #ffe6ac;
+        color: black;
+    }
+
+    td {
+        text-align: left;
+        padding: 10px;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto 575px;
+        gap: 15px;
+        grid-template-areas:
+        "a c"
+        "b b"
+    }
+
+    .contact-grid :nth-child(1) {grid-area: a}
+    .contact-grid :nth-child(2) {grid-area: b}
+    .contact-grid :nth-child(3) {grid-area: c}
+
+
+
+    /* ----> FOOTER <---- */
+
+    footer {
+        background-color: #222222;
+        color: #c78b07;
+       
+    }
+
+
+
+
+}
+
+   /* END OF YOUR MOBILE-FIRST CSS. 
+NO MEDIA QUERIES ABOVE THIS LINE */
+
+
+
+/* ============ DESKTOP ============= */
+
+
+
+
+
+
+

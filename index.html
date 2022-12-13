@@ -5,28 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Three Star Media</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link href="css/styles.css" rel="stylesheet">
+
 </head>
 <body>
 
     <header>
-
+       
+        <!-- ======== NAVIGATION SECTION ======== -->
+       
         <nav>
+
             <div class="container">
-                <img src="images/logo.png" alt="Three Star Media">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Three Star Media">
+                </div>
+
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li class="current"><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Team</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
+
                 <form>
-                    <input type="search">
-                    <button>&#128269;</button>
-                </form>
+                    <input class="searchbar"
+                         type="text" placeholder="Search" name="search">
+                        <button>&#128269;</button>
+                
+                </form>    
             </div> <!-- end container -->
         </nav>
 
+        
+        <!-- ======== WELCOME ======== -->
+       
         <div class="header-welcome">
             <div class="container">
                 <h1>Welcome to Three Star Media</h1>
@@ -37,10 +56,13 @@
     </header>
 
     <main>
+
+        <!-- ======== ABOUT ======== -->
+
         <section class="section-about">
             <div class="container">
                 <!-- Image on left, heading and paragraphs on the right using FLEXBOX -->
-                <img src="images/about-us.jpg">
+                <img src="images/about-us.jpg" alt="about">
                 <h2>About Us</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Libero unde repellendus exercitationem asperiores ducimus placeat, maxime soluta nesciunt pariatur aliquam consequuntur sequi saepe sint praesentium laboriosam perferendis eius amet ad?</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Animi, velit ipsam? Atque accusamus, excepturi corrupti sunt reiciendis soluta quo commodi guidem, non perferendis vel sed facilis rerum cum in exercitationem?</p>
@@ -48,50 +70,56 @@
             </div> <!-- end container -->
         </section> <!-- end section-about -->
 
+
+        <!-- ======== SERVICES ======== -->
         
         <section class="section-services">
             <div class="container">
                 <!-- h2 heading, five div's with h3, image, text and button ON A GRID -->
                 <h2>Our Services</h2>
                 
-                <div class="digital">
-                <img src="images/digital.jpg">
-                <h3>Digital Transformation</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-                <button>Digital Plans ▶</button>
-                </div>
-
-                <div class="marketing">
-                <img src="images/marketing.jpg">
-                <h3>Marketing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-                <button>Marketing Plans ▶</button>
-                </div>
-
-                <div class="video">
-                <img src="images/video.jpg">
-                <h3>Video Production</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-                <button>Video Plans ▶</button>
-                </div>
-
-                <div class="web">
-                <img src="images/web.jpg">
-                <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-                <button>Web Plans ▶</button>
-                </div>
+                <div class="services-grid">
                 
-                <div class="print">
-                <img src="images/print.jpg">
-                <h3>Print</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
-                <button>Print Plans ▶</button>
-                </div>
+                    <div class="digital">
+                    <img src="images/digital.jpg" alt="digital">
+                    <h3>Digital Transformation</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
+                    <button>Digital Plans ▶</button>
+                    </div>
 
+                    <div class="marketing">
+                    <img src="images/marketing.jpg" alt="marketing">
+                    <h3>Marketing</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
+                    <button>Marketing Plans ▶</button>
+                    </div>
+
+                    <div class="video">
+                    <img src="images/video.jpg" alt="video">
+                    <h3>Video Production</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
+                    <button>Video Plans ▶</button>
+                    </div>
+
+                    <div class="web">
+                    <img src="images/web.jpg" alt="web">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
+                    <button>Web Plans ▶</button>
+                    </div>
+                    
+                    <div class="print">
+                    <img src="images/print.jpg" alt="print">
+                    <h3>Print</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Eius vel, rem inventore quo tempora animi mollitia eaque error qui consectetur in reprehenderit magnam at vitae corporis quaerat deleniti explicabo nisi?</p>
+                    <button>Print Plans ▶</button>
+                    
+                </div><!-- end grid -->
             </div> <!-- end container -->
         </section> <!-- end section-services -->
 
+        
+        <!-- ======== VISION ======== -->
 
         <section class="section-vision">
             <div class="container">
@@ -103,65 +131,100 @@
             </div> <!-- end container -->
         </section> <!-- end section-vision -->
 
+        
+        <!-- ======== TEAM ======== -->
 
         <section class="section-team">
             <div class="container">
                 <!-- h2, two div's with an image, two div's with h3, h4, and paragraph of text ON A GRID -->
                 <h2>Our Team</h2>
-                <div class="john-img">
-                <img src="images/john.jpg">
-                </div>
 
-                <div class="john">
-                <h3>John Doe</h3>
-                <h4>CEO and Co-owner</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
-                </div>
+                <div class="team-grid">
+                    <div class="john-img">
+                    <img src="images/john.jpg" alt="john">
+                    </div>
 
-                <div class="bob">
-                <h3>Bob Rite</h3>
-                <h4>CFO and Co-owner</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
-                </div>
+                    <div class="john">
+                    <h3>John Doe</h3>
+                    <h4>CEO and Co-owner</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
+                    </div>
 
-                <div class="bob-img">
-                <img src="images/bob.jpg">
+                    <div class="bob-img">
+                    <img src="images/bob.jpg" alt="bob">
+                    </div>
+                    
+                    <div class="bob">
+                    <h3>Bob Rite</h3>
+                    <h4>CFO and Co-owner</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet, aspernatur ratione sed cum ad officiis sint comque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.</p>
+                    </div>
                 </div>
-
 
             </div> <!-- end container -->
         </section> <!-- end section-team -->
+
+
+        <!-- ======== CONTACT ======== -->
 
         <section class="section-contact">
             <div class="container">
                 <!-- h2, form, google maps embed, table ON A GRID -->
                 <h2>Contact Us</h2>
-                <h3>Send us a message</h3>
-                <form>
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name">
-                
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email">
-                
-                    <label for="message">Message</label>
-                    <input id="message" name="message">
+                    
+                    <div class="contact-grid">
+                        <div class="message">
+                            <h3>Send us a message</h3>
+                            <form>
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name">
+                            
+                                <label for="email">Email</label>
+                                <input type="text" id="email" name="email">
+                            
+                                <label for="message">Message</label>
+                                <input id="message" name="message">
 
-                    <input type="submit" value="Send">
-                </form>
-
-                <h3>Location</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11215.778950128877!2d-75.7549368!3d45.3499278!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1669572693566!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                
-                <h3>Hours of operation</h3>
+                                <input type="submit" value="Send">
+                            </form>
+                        </div>
+                    
+                        <div class="hours">
+                            <h3>Hours of operation</h3>
+                                <table>
+                                    <tr>
+                                        <th>Days</th>
+                                        <th>Hours</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Monday - Friday</td>
+                                        <td>9 AM - 6 PM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Saturday - Sunday</td>
+                                        <td>Closed</td>
+                                    </tr>
+                                </table>
+                        </div>
+                        
+                        <div class="location">
+                            <h3>Location</h3>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9447375322193!2d-75.75493679999998!3d45.3499278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.6001!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1670440057974!5m2!1sen!2sca" width="660" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
                 
             </div> <!-- end container -->
         </section> <!-- end section-contact -->
     </main>
 
+
+    <!-- ======== FOOTER ======== -->
+
     <footer>
         <div class="container">
             <!-- two paragraphs of text-->
+            <p>© Copyright Three Star Media, 2020</p>
+            <p>All images are taken from Unsplash</p>
         </div>
 
     </footer>
