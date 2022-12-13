@@ -682,6 +682,10 @@ input[type=submit] {
         border: 1px solid black;
     }
 
+    .location {
+        width: 100%;
+    }
+
 
     /* ----> HOURS <---- */
     
