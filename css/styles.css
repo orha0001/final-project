@@ -705,19 +705,26 @@ input[type=submit] {
         padding: 10px;
     }
 
+    .hours {
+        margin-top: -80px;
+    }
+
     .contact-grid {
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: auto 575px;
         gap: 15px;
         grid-template-areas:
-        "a c"
-        "b b"
+        " a a a b b b  "
+        " a a a b b b "
+        " a a a b b b "
+        " c c c c c c "
+        " c c c c c c ";
     }
 
     .contact-grid :nth-child(1) {grid-area: a}
-    .contact-grid :nth-child(2) {grid-area: b}
-    .contact-grid :nth-child(3) {grid-area: c}
+    .contact-grid :nth-child(2) {grid-area: c}
+    .contact-grid :nth-child(3) {grid-area: b}
 
 
 
