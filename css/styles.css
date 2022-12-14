@@ -139,8 +139,7 @@ nav form button {
     border-radius: 1px;
     border-color: #c78b07;
     height: 42px;
-    width: 42px;
-    color: #c78b07; 
+    width: 42px; 
     margin-left: -4px;
 }
 
@@ -362,22 +361,25 @@ input[type=submit] {
     }
     
     h1 {
-        font-size: 85px;
-        line-height: 106px;
+        font-size: 81px;
+        line-height: 118px;
         margin-bottom: 17px;
         font-weight: bold;
     }
     
     h2 {
-        font-size: 48px;
+        font-size: 54px;
         margin-bottom: 12px;
+        line-height: 1;
         font-weight: bold;
     }
     
     h3 {
-        font-size: 32px;
+        font-size: 36px;
+        line-height: 1;
         font-weight: bold;
         padding-top: 20px;
+        margin-bottom: 0.8em;
     }
     
     h4 {
@@ -503,6 +505,7 @@ input[type=submit] {
     /* ----> ABOUT SECTION <---- */
 
     .section-about {
+        display: flex;
         background-color: #ffe6ac;
         height: 330px;
     }
@@ -711,13 +714,15 @@ input[type=submit] {
 
     .hours {
         margin-top: -80px;
+        grid-column: span 2;
     }
 
     .contact-grid {
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: auto 575px;
-        gap: 15px;
+        grid-gap: 24px;
+        padding-top: 32px;
         grid-template-areas:
         " a a a b b b  "
         " a a a b b b "
